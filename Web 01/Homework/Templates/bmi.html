@@ -1,0 +1,34 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BMI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h2> Tinh so BMI</h2>
+    <div>
+        <p> Chieu cao cua ban la (cm): {{chiso.h}}</p>
+        <p> Can nang cua ban la (kg): {{chiso.w}}</p>
+        <p> BMI cua ban la: {{chiso.bmi}}</p>
+        <p>
+            Ban dang: 
+        {% if chiso.bmi < 16 %}
+            Thieu can nghiem trong
+        {% elif 16 <= chiso.bmi < 18.5 %}
+            Thieu can
+        {% elif 18.5 <= chiso.bmi < 25 %}
+            Binh thuong
+        {% elif 25 <= chiso.bmi < 30 %}
+            Thua can
+        {% else %}
+            Beo phi
+        {% endif %}
+    
+        </p>
+    </div>
+</body>
+</html>

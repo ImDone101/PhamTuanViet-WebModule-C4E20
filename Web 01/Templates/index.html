@@ -1,0 +1,33 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h2>C4E Blog</h2>
+    {% for post in posts %}
+    <div>
+        <!-- template language, jinja2-->
+        <h3>{{ post.title }}</h3>
+        <p>
+            {{ post.content}}
+        </p>
+        <p>
+            By:
+            <!-- Conditional expression-->
+            {{ }}
+        </p>
+            {% if post.author_sex == 1 %}
+            By: Mr.{{ post.author}}
+            {% else %}
+            By: Mrs.{{ post.author}}
+            {% endif%}
+    </div>
+    {% endfor %}
+</body>
+</html>
