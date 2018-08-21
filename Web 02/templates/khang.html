@@ -1,0 +1,24 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Happy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Customer</h1>
+    <a href="{{url_for('index')}}">Tro ve trang chu</a>
+    {% for tat_ca in toan_bo %}
+    <div>
+        <p>Ten: {{tat_ca.name}}</p>
+        <p>Nghe nghiep: {{tat_ca.job}}</p>
+        <p>Congty: {{tat_ca.company}}</p>
+        <p>Email: {{tat_ca.email}}</p>
+        <hr>
+    </div>
+    {% endfor %}
+</body>
+</html>

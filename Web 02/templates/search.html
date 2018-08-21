@@ -1,0 +1,28 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Dota 2</h1>
+    <a href="{{url_for('index')}}">Tro ve trang chu</a>
+    {% for service in all_service %}
+    <div>
+        {% if service.gender == 0%}
+            <img src="../static/image/female-profile.jpg" alt="">
+        {% else %}
+            <img src="../static/image/male-profile.jpg" alt="">
+        {% endif %}
+        <p>Ten: {{service.name}}</p>
+        <p>Nam sinh: {{service.yob}}</p>
+        <p>Chieu cao: {{service.height}}</p>
+        <hr>
+    </div>
+    {% endfor %}
+</body>
+</html>
