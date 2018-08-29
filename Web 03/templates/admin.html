@@ -1,0 +1,45 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Admin playground</h1>
+    <table border="1px">
+        <thead>
+            <th>STT</th>
+            <th>Name</th>
+            <th>YoB</th>
+            <th>Gender</th>
+            <th>Height</th>
+            <th>phone</th>
+            <th>Address</th>
+            <th>Status</th>
+            <th></th>
+        </thead>
+        <tbody>
+            {% for service in all_service %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{service.name}}</td>
+                <td>{{service.yob}}</td>
+                <td>{{"Male" if service.gender else "Female"}}</td>
+                <td>{{service.height}}</td>
+                <td>{{service.phone}}</td>
+                <td>{{service.address}}</td>
+                <td>{{"Not busy" if service.status else "Busy"}}</td>
+                <td>
+                    <a href="{{ url_for('updateservice', service_id=service.id) }}">Fix</a>
+                    <a href="{{ url_for('delete', service_id=service.id)}}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
