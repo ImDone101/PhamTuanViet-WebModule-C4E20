@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ordering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Danh sach</h1>
+    <table border="1px">
+        <thead>
+            <th>STT</th>
+            <th>Contact</th>
+            <th>User</th>
+            <th>Time</th>
+            <th>Accept</th>
+        </thead>
+        <tbody>
+                {% for order in orders %}
+            <tr>
+                {% if order.is_accepted == False %}
+                <td>{{ loop.index }}</td>
+                <td>{{ order.service.name }}</td>
+                <td>{{ order.user.username }}</td>
+                <td>{{ order.order_time }}</td>
+                <td>
+                    <a href="{{ url_for("chapnhan", order_id=order.id) }}">Phê duyệt yêu cầu</a>
+                </td>
+            </tr>
+                {% endif %}
+                {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

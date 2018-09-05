@@ -1,0 +1,48 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Admin</h1>
+    <a href="{{url_for('logout)}}'">Dang xuat</a>
+    <form method="POST">
+        <label>Link</label>
+        <input type="text" name="link">
+        <br>
+        <label>Them</label>
+        <input type="submit" value="submit">
+        <br><br>
+    </form>
+    <table border="1px">
+        <thead>
+            <th>#</th>
+            <th>Title</th>
+            <th>Views</th>
+            <th>Link</th>
+            <th>Thumbnail</th>
+        </thead>
+        <tbody>
+            {% for video in videos %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{video.title}}</td>
+                <td>{{video.views}}</td>
+                <td>
+                    <a href="{{video.link}}" target="#">View</a>
+                </td>
+                <td>
+                    <img src="{{video.thumbnail}}" width="250"height="120">
+
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
