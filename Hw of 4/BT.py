@@ -120,7 +120,7 @@ def login():
             service_id = session["service"]
             return redirect(url_for("detail", service_id=service_id))
         else:
-            return redirect(url_for("signin"))
+            return redirect(url_for("sign_in"))
 
         
 @app.route('/sign_in', methods=["GET", "POST"])

@@ -1,0 +1,23 @@
+.bg-gray{
+    background-color: gray;
+}
+.bg-green{
+    background-color: lightgreen;
+}
+.m-10px{
+    margin: 10px;
+}
+.w-100px {
+    width: 100px;
+}
+.h-100px {
+    height: 100px;
+}
+
+#flex-box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}

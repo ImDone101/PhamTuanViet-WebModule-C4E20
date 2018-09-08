@@ -1,0 +1,195 @@
+.d-inline-block {
+    display: inline-block;
+}
+
+.bg-gold{
+    background-color:gold
+}
+
+.bg-cyan {
+    background-color: cyan;
+}
+
+.bg-darkcyan{
+    background-color: darkcyan;
+}
+
+.bg-coral {
+    background-color:coral;
+}
+
+.bg-skyblue{
+    background-color: skyblue;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-white{
+    background-color:white;
+}
+
+.bg-gray{
+    background-color:gray;
+}
+
+.bg-lightblue{
+    background-color:lightblue;
+}
+
+.bg-lightcoral{
+    background-color:lightcoral;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-lightgreen{
+    background-color:lightgreen;
+}
+
+
+
+#big-block{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+
+#block-main-1{
+    height: 1200px;
+    width: 15%;
+    padding: 20px 10px;
+}
+
+#block-lightcoral-1 {
+    height: 100px
+}
+
+#block-1 {
+    margin: 20px 0px 40px 0px;
+}
+
+#block-darkcyan {
+    height: 30px;
+}
+
+
+
+#block-cyan {
+    height: 15px;
+}
+
+#block-2{
+    height: 750px;
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+#block-gray {
+    height: 350px;
+}
+
+
+
+#block-main-2{
+    height: 1200px;
+    width: 85%;
+    padding: 20px 10px;
+}
+
+#block-lightgreen{
+    height: 500px;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    box-sizing: border-box;
+}
+
+#block-green{
+    height: 80px;
+    width: 389px;
+}
+
+#small-box-1{
+    height: 80px;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+
+#small-box-2{
+    height: 70%;
+    padding: 70px 0px;
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;
+    box-sizing: border-box;
+}
+
+#block-black{
+    height: 40px;
+    width: 35%;
+}
+
+#block-white{
+    height: 50px;
+    width: 20%;
+}
+
+
+
+#block-3 {
+    height: 50px;
+    margin: 30px 0px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#block-skyblue {
+    height: 50px;
+    width: 60%;
+}
+
+#block-lightcoral-2{
+    height: 50px;
+    width: 40%;
+}
+
+
+
+#block-4{
+    height: 550px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#small-block-3 {
+    height:550px;
+    width: 24%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between
+}
+
+#block-gold {
+    height: 165px;
+}
+
+#block-coral {
+    height: 357px;
+}
+
+
+
+#block-main-3 {
+    height: 50px;
+    width: 100%;
+}

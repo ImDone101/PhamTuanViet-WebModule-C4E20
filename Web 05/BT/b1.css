@@ -1,0 +1,60 @@
+.font {
+    font-size: 25px;
+    color: white ;
+    text-transform: uppercase;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.h-w-200px {
+    height: 300px;
+    width: 300px;
+}
+
+.h-200px {
+    height: 300px;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-flow: row nowrap;
+}
+
+.text-align{
+    text-align:center;
+}
+
+#block-main {
+    height: 1080px;
+    width: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp1939726.jpg");
+    background-size: cover;
+}
+
+#block-1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block-2 {
+    background-image: url("http://www.romanemperors.com/images/julius-caesar/8-bust-sculpture.jpg");
+    background-size: cover;
+    border-radius: 100%;
+}
+
+#block-3 {
+    background-image: url("https://render.fineartamerica.com/images/rendered/default/poster/8/10/break/images-medium-5/bust-of-marcus-licinius-crassus-c115-53-bc-stone-bw-photo-roman.jpg");
+    background-size:cover;
+    border-radius: 100%;
+}
+
+#block-4 {
+    background-image: url("https://www.thoughtco.com/thmb/ZrPz9nL9rfGQr-dbsuvctkUIW6o=/2194x2925/filters:fill(auto,1)/PompeytheGreat-56aac7693df78cf772b48543.jpg");
+    background-size: cover;
+    border-radius:100%;
+}
