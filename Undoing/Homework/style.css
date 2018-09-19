@@ -1,0 +1,155 @@
+/* Background color */
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-silver{
+    background-color: silver;
+}
+
+.bg-cover{
+    background-size: cover;
+}
+
+.bg-icon-center{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-icon-left{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* ảnh */
+.logo{
+    background-image: url(images/logo.png);
+}
+
+.anh0{
+    background-image: url(images/0.jpg);
+}
+
+.anh1{
+    background-image: url(images/1.jpg);
+}
+
+.anh2{
+    background-image: url(images/2.jpg);
+}
+
+.anh3{
+    background-image: url(images/3.jpg);
+}
+
+.anh4{
+    background-image: url(images/4.jpg);
+}
+
+.anh5{
+    background-image: url(images/5.jpg);
+}
+
+.anh6{
+    background-image: url(images/6.jpg);
+}
+
+.anh7{
+    background-image: url(images/7.jpg);
+}
+
+.anh8{
+    background-image: url(images/8.jpg);
+}
+
+.anh9{
+    background-image: url(images/9.jpg);
+}
+
+.anh10{
+    background-image: url(images/10.jpg);
+}
+
+.anh11{
+    background-image: url(images/11.jpg);
+}
+
+.anh12{
+    background-image: url(images/12.jpg);
+}
+
+.facebook{
+    background-image: url(icons/facebook.svg);
+}
+
+.instagram{
+    background-image: url(icons/instagram.svg);
+}
+
+.tweet{
+    background-image: url(icons/twitter.svg);
+}
+
+.pinterest{
+    background-image: url(icons/pinterest.svg);
+}
+
+/* style */
+.t-12px{
+    font-size: 12px;
+}
+
+.t-8px{
+    font-size: 8px;
+}
+
+.tsilver{
+    color:silver;
+}
+
+.tgray{
+    color: gray;
+}
+
+.twhite{
+    color: white;
+}
+
+.tblack{
+    color: black;
+}
+
+.bold{
+    font-weight: bold;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.quicksand{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Căn lê các kiểu */
+.margin-left-10px{
+    margin-left: 10px;
+}
